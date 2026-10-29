@@ -6,7 +6,9 @@
     <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/47b30e6985.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
+
   <body>
     <section id="landing">
       <nav>
@@ -18,13 +20,35 @@
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
         </div>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link">Home</a>
+          </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link">Books</a>
+          </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor">Contacts</a>
+          </li>
+        </ul>
+        </div>
+      </div>
         </nav>
         <header>
           <div class="header__container ">
             <div class="header__description">
               <h1>America's most awarded library platform</h1>
               <h2>Find your dream book with <span class=purple>Library</span></h2>
-              <button class="btn">Browse Books</button>
+              <a href="#features">
+        <button class="btn">Browse Books</button>
+              </a>   
           </div>
           <figure class="header__img--wrapper">
             <img src="./assets/Undraw_Books.svg" alt="">
@@ -41,7 +65,8 @@
           <div class="row">
             <h2 class="section__title">Why choose <span class="purple">Library</span>
             </h2>
-        <div class= "highlight__wrapper">
+            </div> 
+        <div class="highlight__wrapper">
               <div class="highlight">
                 <div class="highlight__img">
                   <i class= "fas fa-bolt"></i>
@@ -51,9 +76,9 @@
                   <p class="highlight__para">Get access to the book you purchased online instantly
                   </p>
             </div> 
-        </div>
+        </div> 
       </div>
-      <div class="highlight">
+            <div class="highlight">
                 <div class="highlight__img">
                   <i class= "fas fa-book-open"></i>
                 </div>
@@ -62,9 +87,8 @@
                   <p class="highlight__para">Library has books in all your favorite categories.
                   </p>
             </div> 
-        </div>
       </div>
-      <div class="highlight">
+          <div class="highlight">
                 <div class="highlight__img">
                   <i class= "fas fa-tags"></i>
                 </div>
@@ -73,8 +97,6 @@
                   <p class="highlight__para">Get your hands on popular books for as little as $10
                   </p>
             </div> 
-        </div>
-      </div>
     </section>
 
        <section id="featured">
@@ -339,7 +361,7 @@
             <img src="./assets/Library.svg" class="footer__logo--img"alt="">
           </figure>
           </a>
-          <div class="footer__list"></div>
+          <div class="footer__list">
             <a href="" class="footer__link">Home</a>
             <a href="" class="footer__link no-cursor">About</a>
             <a href="" class="footer__link">Books</a>
